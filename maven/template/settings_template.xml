@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <localRepository>C:\dev\maven\repository</localRepository>
+
+    <profiles>
+
+        <profile>
+            <id>General-Profile</id>
+            <properties>
+                <app.port.usuario>8080</app.port.usuario>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Database-H2</id>
+            <properties>
+                <database.profile.active>h2</database.profile.active>
+                <database.user>h2</database.user>
+                <database.password>123</database.password>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Database-PostgresSQL</id>
+            <properties>
+                <database.profile.active>postgresql</database.profile.active>
+                <database.name>bd_deleting_cascade_jpa</database.name>
+                <database.user>postgres</database.user>
+                <database.password>123</database.password>
+            </properties>
+        </profile>
+
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>General-Profile</activeProfile>
+    </activeProfiles>
+
+</settings>

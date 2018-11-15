@@ -1,6 +1,5 @@
-# Arquivos/Diretórios de configuração e/ou utilitários do projeto
+# Arquivo de configuração pessoal do projeto
 personal-config/
-settings-maven-*.xml
 
 # Arquivos do IntelliJ
 *.iml
