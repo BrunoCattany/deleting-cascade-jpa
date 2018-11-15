@@ -1,0 +1,39 @@
+Deletando a pessoa de id (1), o cenário é:
+
+Pessoa: 3, deve ficar 2.
+-> Deve ficar apenas Bruno(2) e Carlos(3).
+
+--------------------------------------------------
+
+Turma: 3, deve ficar todas.
+-> Deve ficar os IDs: (1, 2, 3).
+
+--------------------------------------------------
+
+Frequência: 4, deve ficar 3.
+-> Deve ficar os IDs: (2, 3, 4).
+
+--------------------------------------------------
+
+Academia: 3, deve ficar todas.
+-> Deve ficar todas: (1, 2, 3).
+
+--------------------------------------------------
+
+Treino: 4, deve ficar 1.
+-> Deve ficar os IDs: (4).
+
+--------------------------------------------------
+
+Programação: 4, deve ficar 2.
+-> Deve ficar os IDs: (2, 4).
+
+--------------------------------------------------
+
+Exercício: 4, deve ficar todas.
+-> Deve ficar todas: (1, 2, 3, 4).
+
+--------------------------------------------------
+
+Treino_Exercicio: 8, deve ficar 2.
+-> Deve ficar os IDs: (7, 8).
