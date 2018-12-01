@@ -1,9 +1,11 @@
 package br.com.cattany.study.service;
 
+import br.com.cattany.study.enums.OrphanRemovalOption;
 import br.com.cattany.study.model.impl.Pessoa;
-import lombok.NonNull;
+import br.com.cattany.study.model.impl.Treino;
 
 import javax.persistence.OneToMany;
+import javax.annotation.Nonnull;
 
 /**
  * @author Bruno Cattany
@@ -13,17 +15,14 @@ public interface PessoaService {
 
     Pessoa findById(Integer id);
 
-    void delete(Pessoa pessoa);
-
     void update(Pessoa pessoa);
 
     /**
-     * Realiza a deleção de uma {@link Pessoa}, <br>
-     * baseado em um cenário aonde a opção {@link OneToMany#cascade()} é exercitada.
+     * Realiza a deleção de um ou vários {@link Treino}s, <br>
+     * utilizando-se do recurso {@link OneToMany#orphanRemoval()}.
      *
-     * @param pessoa a ser deletada.
-     * @param orphanRemovalOption opção do cenário que envolve a desvinculação de referência entre os objetos. <br>
-     *                            As possibilidades estão entre <b>1 e 4</b>.
+     * @param pessoa a ter os treinos deletados.
+     * @param orphanRemovalOption opção do cenário de desvinculação de referência entre o pai e filho. <br>
      */
-    void deleteUsingOrphanRemoval(@NonNull Integer orphanRemovalOption, @NonNull Pessoa pessoa);
+    void deleteTreinosUsingOrphanRemoval(@Nonnull OrphanRemovalOption orphanRemovalOption, @Nonnull Pessoa pessoa);
 }

@@ -30,7 +30,7 @@ e também o uso do parâmetro **_'orphanRemoval = true' (since JPA 2.0)_**.
 Foi declarado o _**Cascade**_ somente nos relacionamentos **_@OneToMany_**.\
 Para demonstração na prática, foi adotado/modelado o seguinte cenário:
 
-![DER](docs/der.jpeg)
+![DER](docs/images/der.jpeg)
 
 #### c1) Requisitos:
 
@@ -67,7 +67,7 @@ e realizar uma cópia deste arquivo para o diretório
 **personal-config** _(referência vermlha - Você deve criar este diretório, exatamente com este nome, na raíz do projeto)_.   
 **O nome do arquivo copiado, é conforme _a sua preferência_.**
 
-![personal_config_directory](docs/personal_config_directory.jpg)
+![personal_config_directory](docs/images/personal_config_directory.jpg)
 
 > Obs.: Isso se deve ao fato de que no **.gitignore** deste projeto, este diretório será ignorado,
  possibiliando que possa se manusear no arquivo de configuração sem que o _**GIT**_ 
@@ -79,16 +79,16 @@ Caso utilize o diretório _**.m2**_ (padrão do Maven), apenas retire a tag **_l
 
 3. Ativar o profile de sua preferência antes de subir o projeto.
 
-![profile_project_active](docs/profile_project_active.jpg)
+![profile_project_active](docs/images/profile_project_active.jpg)
 
 4. Como este projeto utiliza-se da biblioteca [Lombok](https://projectlombok.org/), é necessário instalar o plugin do mesmo, para se visualizar **os métodos/campos/etc. autogerados**. Veja como é no **IntelliJ**:
 
 - **Browse plugins in IntelliJ:**
 
-![lombok_plugin_repository](docs/lombok_plugin_repository.jpg)
+![lombok_plugin_repository](docs/images/lombok_plugin_repository.jpg)
 
 - **Lombok Plugin:**
 
-![lombok_plugin_example](docs/lombok_plugin_example.jpg)
+![lombok_plugin_example](docs/images/lombok_plugin_example.jpg)
 
 5. Pronto! Contanto que você tenha colocado alguma porta não conflituosa **(recomendado 8080)**, suba o projeto e estude!
