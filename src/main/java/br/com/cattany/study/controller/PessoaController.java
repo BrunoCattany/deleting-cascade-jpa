@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @since 29/10/2018
  */
 @RepositoryRestController
+@RequestMapping("/pessoas")
 public class PessoaController {
 
     private final PessoaService pessoaService;
@@ -24,7 +25,7 @@ public class PessoaController {
         this.pessoaService = pessoaService;
     }
 
-    @DeleteMapping(path = "/pessoas/{id}/deletarTreinos/orphanRemovalOptionNumber/{orphanRemovalOptionNumber}")
+    @DeleteMapping(path = "/{id}/deletarTreinos/orphanRemovalOptionNumber/{orphanRemovalOptionNumber}")
     public ResponseEntity<?> deletarTreinos(@PathVariable Integer id,
                                             @PathVariable Integer orphanRemovalOptionNumber) {
         final Pessoa pessoa = pessoaService.findById(id);

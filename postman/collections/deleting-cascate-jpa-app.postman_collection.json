@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "7e599f68-545c-4f57-8601-d465e897e94d",
+		"name": "for-test_deleting-cascade-jpa-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Resource - Pessoas",
+			"item": [
+				{
+					"name": "POST - Pessoa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"?\",\n    \"cpf\": \"?\",\n    \"turma\": {\n    \t\"_comemnt\": \"Available IDs - {1, 2, 3}\",\n        \"id\": \"?\" \n    }\n}"
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Pessoas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Pessoa - ID = 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Pessoa  - ID = 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/2",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"2"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Pessoa - ID = 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/3",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"3"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Pessoa -  ID = 1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Pessoa -  ID = 2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/2",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"2"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Pessoa -  ID = 3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/3",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"3"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Treinos Pessoa (1) - Orphan Removal Option = 1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1/deletarTreinos/orphanRemovalOptionNumber/1",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1",
+								"deletarTreinos",
+								"orphanRemovalOptionNumber",
+								"1"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Treinos Pessoa (1) - Orphan Removal Option = 2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1/deletarTreinos/orphanRemovalOptionNumber/2",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1",
+								"deletarTreinos",
+								"orphanRemovalOptionNumber",
+								"2"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Treinos Pessoa (1) - Orphan Removal Option = 3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1/deletarTreinos/orphanRemovalOptionNumber/3",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1",
+								"deletarTreinos",
+								"orphanRemovalOptionNumber",
+								"3"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Treinos Pessoa (1) - Orphan Removal Option = 4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1/deletarTreinos/orphanRemovalOptionNumber/4",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1",
+								"deletarTreinos",
+								"orphanRemovalOptionNumber",
+								"4"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Treinos Pessoa (1)  - INVALID Orphan Removal Option",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/pessoas/1/deletarTreinos/orphanRemovalOptionNumber/10",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"pessoas",
+								"1",
+								"deletarTreinos",
+								"orphanRemovalOptionNumber",
+								"10"
+							]
+						},
+						"description": "Limpa os treinos de uma pessoa, baseado no cenário do uso de orphan Removal 1."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Resource - Treinos",
+			"item": [
+				{
+					"name": "GET - Treinos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urlApi}}/treinos",
+							"host": [
+								"{{urlApi}}"
+							],
+							"path": [
+								"treinos"
+							]
+						},
+						"description": "GET - Pessoas"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
