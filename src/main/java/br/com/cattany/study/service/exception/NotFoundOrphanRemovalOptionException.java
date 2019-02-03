@@ -5,6 +5,7 @@ import br.com.cattany.study.enums.OrphanRemovalOption;
 import javax.annotation.Nonnull;
 import java.util.stream.Stream;
 
+import static java.lang.String.format;
 import static java.util.stream.Collectors.joining;
 
 /**
@@ -13,10 +14,15 @@ import static java.util.stream.Collectors.joining;
  */
 final public class NotFoundOrphanRemovalOptionException extends RuntimeException {
 
-    private final static String ERROR_MESSAGE = "Option not found. Please, choose a number between %s and %s. Available Options: %s";
-
     public NotFoundOrphanRemovalOptionException(@Nonnull OrphanRemovalOption[] enumValues) {
-        super(String.format(ERROR_MESSAGE, getFirstOption(enumValues), getLastOption(enumValues), getAvailableOptions(enumValues)));
+        super(
+                format(
+                        "Option not found. Please, choose a number between %s and %s. Available options: %s",
+                        getFirstOption(enumValues),
+                        getLastOption(enumValues),
+                        getAvailableOptions(enumValues)
+                )
+        );
     }
 
     private static String getAvailableOptions(OrphanRemovalOption[] enumValues) {

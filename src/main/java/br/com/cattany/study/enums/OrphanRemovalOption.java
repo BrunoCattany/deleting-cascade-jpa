@@ -57,7 +57,7 @@ public enum OrphanRemovalOption {
         this.consumer = consumer;
     }
 
-    public static OrphanRemovalOption getFromOption(@Nonnull Integer option) {
+    public static OrphanRemovalOption getFromOption(@Nonnull Integer option) throws NotFoundOrphanRemovalOptionException {
         OrphanRemovalOption orphanRemovalOption = LOOKUP.get(option);
 
         if (orphanRemovalOption != null) {
