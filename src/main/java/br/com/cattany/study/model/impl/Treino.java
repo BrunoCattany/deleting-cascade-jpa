@@ -1,6 +1,7 @@
 package br.com.cattany.study.model.impl;
 
 import br.com.cattany.study.model.definition.AbstractEntityWithIdIdentity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -15,6 +16,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Treino extends AbstractEntityWithIdIdentity {
 
     @Column(length = 30)
@@ -23,6 +25,7 @@ public class Treino extends AbstractEntityWithIdIdentity {
     @ManyToOne
     private Academia academiaOrigem;
 
+    @JsonIgnore
     @ManyToOne
     private Pessoa pessoa;
 

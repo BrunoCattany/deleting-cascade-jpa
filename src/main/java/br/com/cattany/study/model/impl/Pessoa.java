@@ -4,7 +4,10 @@ import br.com.cattany.study.model.definition.AbstractEntityWithIdIdentity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 import static javax.persistence.CascadeType.PERSIST;
@@ -19,6 +22,7 @@ import static javax.persistence.CascadeType.REMOVE;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Pessoa extends AbstractEntityWithIdIdentity {
 
     @Column(length = 60)
