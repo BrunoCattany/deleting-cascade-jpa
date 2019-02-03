@@ -11,12 +11,12 @@
     </parent>
 
     <groupId>br.com.cattany.study</groupId>
-    <artifactId>deleting-cascate-jpa</artifactId>
+    <artifactId>deleting-cascade-jpa</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Deleting Cascate JPA</name>
+    <name>Deleting Cascade JPA</name>
     <description>
-        A simple project that show how use delete with cascate jpa.
+        A simple project that show how use delete with cascade jpa.
     </description>
 
     <properties>
