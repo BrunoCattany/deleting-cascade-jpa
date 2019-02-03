@@ -4,8 +4,6 @@ import br.com.cattany.study.enums.OrphanRemovalOption;
 import br.com.cattany.study.model.impl.Pessoa;
 import br.com.cattany.study.repository.PessoaRepository;
 import br.com.cattany.study.service.PessoaService;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

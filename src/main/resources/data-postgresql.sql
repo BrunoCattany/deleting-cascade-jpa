@@ -1,8 +1,9 @@
 ---------------- Resumo do Cenário:
 
 -- A pessoa 1 (Aurélio) possui: 3 treinos e 1 frequência.
--- A pessoa 2 (Bruno) possui: 1 treino e 3 frequências.
--- A pessoa 3 (Carlos) não possui treinos e nem frequências.
+-- A pessoa 2 (Bruno)   possui: 2 treinos e 3 frequências.
+-- A pessoa 3 (Carlos)  possui: 1 treino  e nenhuma frequência.
+-- A pessoa 4 (José)    possui: 2 treinos e nenhuma frequência.
 
 --------------------------------------------
 
@@ -21,7 +22,8 @@ INSERT INTO pessoa
 VALUES
  ('Aurélio', 111111111, 1),
  (  'Bruno', 111111112, 1),
- ( 'Carlos', 111111113, 3)
+ ( 'Carlos', 111111113, 3),
+ (   'José', 111111114, 3)
 ;
 
 --------------------------------------------
@@ -53,7 +55,14 @@ VALUES
  (         'Treino Leve', 1, 2),
  (     'Treino Moderado', 1, 2),
  ('Treino Intermediário', 1, 2),
- ( 'Treino Profissional', 2, 3)
+
+ (   'Treino Muito Leve', 2, 3),
+ ( 'Treino Profissional', 2, 3),
+
+ (    'Treino de Atleta', 3, 3),
+
+ (   'Treino de Corrida', 4, 3),
+ (       'Treino Sprint', 4, 3)
 ;
 
 --------------------------------------------
@@ -90,7 +99,11 @@ VALUES
  (2, 4, 10, 3),
  (3, 1, 15, 3),
  (4, 1, 15, 3),
- (4, 2, 15, 3)
+ (4, 2, 15, 3),
+ (5, 2, 15, 3),
+ (6, 2, 15, 3),
+ (7, 2, 15, 3),
+ (8, 2, 15, 3)
 ;
 
 --------------------------------------------

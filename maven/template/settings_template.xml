@@ -16,7 +16,7 @@
         </profile>
 
         <profile>
-            <id>Database-H2</id>
+            <id>Database-H2</id> <!-- REVIEW - Verificar se o H2 está funcionando! -->
             <properties>
                 <database.profile.active>h2</database.profile.active>
                 <database.user>h2</database.user>

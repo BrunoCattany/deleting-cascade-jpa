@@ -1,39 +1,33 @@
-Deletando a pessoa de id (1), o cenário é:
+Deletando a pessoa de id (1 - Aurélio), o cenário fica:
 
-Pessoa: 3, deve ficar 2.
--> Deve ficar apenas Bruno(2) e Carlos(3).
+================== PESSOA ==================
+       Antes: 4 pessoas
+Após deleção: 3 pessoas -> Bruno(2), Carlos(3) e José(4)
 
---------------------------------------------------
+================== TURMA ===================
+       Antes: 3 turmas
+Após deleção: 3 turmas -> IDS (1, 2, 3)
 
-Turma: 3, deve ficar todas.
--> Deve ficar os IDs: (1, 2, 3).
+================== FREQUÊNCIA ==============
+       Antes: 4 frequências.
+Após deleção: 3 frequências -> IDS (2, 3, 4)
 
---------------------------------------------------
+================== ACADEMIA ================
+       Antes: 3 academias
+Após deleção: 3 academias -> IDS (1, 2, 3)
 
-Frequência: 4, deve ficar 3.
--> Deve ficar os IDs: (2, 3, 4).
+================== TREINOS =================
+       Antes: 8 treinos
+Após deleção: 5 treinos -> IDS (4, 5, 6, 7, 8)
 
---------------------------------------------------
+================== PROGRAMAÇÃO =============
+       Antes: 4 programações
+Após deleção: 2 programações -> IDS (2, 4)
 
-Academia: 3, deve ficar todas.
--> Deve ficar todas: (1, 2, 3).
+================== EXERCÍCIO ===============
+       Antes: 4 exercícios
+Após deleção: 4 exercícios -> IDS (1, 2, 3, 4)
 
---------------------------------------------------
-
-Treino: 4, deve ficar 1.
--> Deve ficar os IDs: (4).
-
---------------------------------------------------
-
-Programação: 4, deve ficar 2.
--> Deve ficar os IDs: (2, 4).
-
---------------------------------------------------
-
-Exercício: 4, deve ficar todas.
--> Deve ficar todas: (1, 2, 3, 4).
-
---------------------------------------------------
-
-Treino_Exercicio: 8, deve ficar 2.
--> Deve ficar os IDs: (7, 8).
+================== TREINO_EXERCÍCIO ===============
+       Antes: 12 treinos_exercicios
+Após deleção:  6 treinos_exercicios -> IDS (6, 7, 8, 9, 10, 11, 12)
