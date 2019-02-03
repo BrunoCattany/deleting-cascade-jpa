@@ -15,12 +15,9 @@ import javax.annotation.Nonnull;
  * @author Bruno Cattany
  * @since 29/10/2018
  */
-@Getter
 @Service
 public class PessoaServiceImpl implements PessoaService {
 
-    @Getter
-    @Setter
     private PessoaRepository repository;
 
     @Autowired
