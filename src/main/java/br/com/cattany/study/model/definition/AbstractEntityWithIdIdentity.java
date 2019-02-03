@@ -2,10 +2,7 @@ package br.com.cattany.study.model.definition;
 
 import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -68,5 +65,7 @@ public abstract class AbstractEntityWithIdIdentity implements Serializable {
    */
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(updatable = false)
   private Integer id;
+
 }

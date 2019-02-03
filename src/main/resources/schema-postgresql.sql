@@ -14,7 +14,7 @@
 DROP TABLE IF EXISTS turma CASCADE;
 
 CREATE TABLE turma (
-    id     INTEGER NOT NULL,
+    id      SERIAL,
   nome VARCHAR(11) NOT NULL,
 
   CONSTRAINT turma_pkey PRIMARY KEY (id)
@@ -25,7 +25,7 @@ CREATE TABLE turma (
 DROP TABLE IF EXISTS pessoa CASCADE;
 
 CREATE TABLE pessoa (
-        id     INTEGER NOT NULL,
+        id      SERIAL,
        cpf VARCHAR(11) NOT NULL,
       nome VARCHAR(60) NOT NULL,
   turma_id     INTEGER NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE pessoa (
 DROP TABLE IF EXISTS academia CASCADE;
 
 CREATE TABLE academia (
-        id     INTEGER NOT NULL,
+        id      SERIAL,
       nome VARCHAR(30) NOT NULL,
   endereco VARCHAR(50) NOT NULL,
 
@@ -51,7 +51,7 @@ CREATE TABLE academia (
 DROP TABLE IF EXISTS treino CASCADE;
 
 CREATE TABLE treino (
-                  id     INTEGER NOT NULL,
+                  id      SERIAL,
                 nome VARCHAR(30) NOT NULL,
            pessoa_id     INTEGER,
   academia_origem_id     INTEGER NOT NULL,
@@ -66,9 +66,9 @@ CREATE TABLE treino (
 DROP TABLE IF EXISTS programacao CASCADE;
 
 CREATE TABLE programacao (
-                     id INTEGER NOT NULL,
+                     id    SERIAL,
           data_execucao TIMESTAMP,
-              treino_id INTEGER NOT NULL,
+              treino_id   INTEGER NOT NULL,
 
   CONSTRAINT      programacao_pkey PRIMARY KEY                    (id),
   CONSTRAINT programacao_treino_fk FOREIGN KEY             (treino_id) REFERENCES treino(id)
@@ -79,7 +79,7 @@ CREATE TABLE programacao (
 DROP TABLE IF EXISTS frequencia CASCADE;
 
 CREATE TABLE frequencia (
-            id   INTEGER NOT NULL,
+            id    SERIAL,
      pessoa_id   INTEGER,
  data_registro TIMESTAMP,
 
@@ -92,7 +92,7 @@ CREATE TABLE frequencia (
 DROP TABLE IF EXISTS exercicio CASCADE;
 
 CREATE TABLE exercicio (
-         id     INTEGER NOT NULL,
+         id      SERIAL,
        nome VARCHAR(30) NOT NULL,
 
   CONSTRAINT exercicio_pkey PRIMARY KEY (id)
@@ -103,7 +103,7 @@ CREATE TABLE exercicio (
 DROP TABLE IF EXISTS treino_exercicio CASCADE;
 
 CREATE TABLE treino_exercicio (
-            id INTEGER NOT NULL,
+            id  SERIAL,
      treino_id INTEGER NOT NULL,
   exercicio_id INTEGER NOT NULL,
          serie INTEGER NOT NULL,
