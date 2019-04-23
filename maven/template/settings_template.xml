@@ -12,6 +12,8 @@
             <id>General-Profile</id>
             <properties>
                 <app.port.usuario>8080</app.port.usuario>
+                <spring.jpa.hibernate.ddl-auto>none</spring.jpa.hibernate.ddl-auto>
+                <spring.datasource.initialization-mode>NEVER</spring.datasource.initialization-mode>
             </properties>
         </profile>
 
